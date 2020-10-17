@@ -2,7 +2,7 @@
   "name": "macadam-grinding",
   "description": "A gravel grinding site",
   "version": "0.0.1",
-  "license": "Mozilla Public License 2.0",
+  "license": "MPL-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Isaac-Tait/Macadam-Grinding"
