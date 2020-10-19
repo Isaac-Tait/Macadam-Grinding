@@ -1,5 +1,5 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import successkid from './node_modules/images/successkid.jpg';
 </script>
 
 <style>
