@@ -34,7 +34,8 @@ export default {
 				dev,
 				hydratable: true,
 				preprocess: sveltePreprocess(),
-				emitCss: true
+				emitCss: true,
+				_preprocess_
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -85,7 +86,8 @@ export default {
 				generate: 'ssr',
 				hydratable: true,
 				preprocess: sveltePreprocess(),
-				dev
+				dev,
+				_preprocess_
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
