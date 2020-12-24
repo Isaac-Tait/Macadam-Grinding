@@ -11,6 +11,8 @@ import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 
+import { preprocess } from './svelte.config.js';
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -35,7 +37,7 @@ export default {
 				hydratable: true,
 				preprocess: sveltePreprocess(),
 				emitCss: true,
-				_preprocess_
+				preprocess
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -87,7 +89,7 @@ export default {
 				hydratable: true,
 				preprocess: sveltePreprocess(),
 				dev,
-				_preprocess_
+				preprocess
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
